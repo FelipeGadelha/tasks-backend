@@ -19,7 +19,7 @@ public class Task {
 	private LocalDate dueDate;
 	
 	public Task() {}
-
+	
 	@Id
 	@GeneratedValue
 	public Long getId() {

@@ -1,7 +1,6 @@
 package br.ce.wcaquino.taskbackend.controller;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
 
 import java.time.LocalDate;
 
@@ -80,9 +79,7 @@ public class TaskControllerTest {
 		todo.setTask("descricao");
 		todo.setDueDate(LocalDate.now());
 		controller.save(todo);
-		Mockito.verify(taskRepo).save(todo);
-		
-		
+		Mockito.verify(taskRepo).save(todo);	
 	}
 
 }
